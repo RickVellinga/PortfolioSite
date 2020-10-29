@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 1s;
+}
+
+.container{
+  position: relative;
+}
+
+
+
+.topnav a:hover{
+  font-size: 19px;
+}
+
+.container p{
+  position: absolute;
+  z-index: 1;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 50px;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-align: center;
+}
+
+.container img{
+  position: relative;
+}
+
+button{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  letter-spacing: 7px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+  border: none;
+  background: black;
+  height: 50px;
+  width: 250px;
+  text-transform: uppercase;
+  left: 49.4%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+button:hover{
+  transition: 0.7s;
+  width: 260px;
+  height: 60px;
+  font-size: 16px;
+}
+
+.overmij__naam{
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+
+.overmij__studie{
+  text-align: center;
+  color: darkgrey;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 0;
+  letter-spacing: 10px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: left;
+  margin-top: 100px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column img{
+  width: 320px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  padding: 10px;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#media{
+  line-height: 10px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+ .media{
+   margin-top: 20px;
+   text-decoration: none;
+   color: black;
+ }
+
+footer .column{
+  height: 200px;
+  width: 50%;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  outline: none;
+  padding: 10px;
+  transition: 0.7s;
+}
+
+footer a:hover{
+  font-size: 18px;
+  transition: 0.7s
+}
+
+.progress-item {
+    margin: 0 0 20px;
+}
+
+.progress-title {
+    font-size: 12px;
+    margin: 0 0 4px;
+}
+
+.progress {
+    background-color: #eaeaea;
+    box-shadow: none;
+    height: 6px;
+    width: 60%;
+    margin: 0 0 10px;
+    overflow: visible;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 6px;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.progress-bar.progress-bar-brand {
+    background-color: #333;
+}
+
+.pb-number-box {
+    position: absolute;
+    padding: 4px 0;
+    display: block;
+    top: -24px;
+    right: 0;
+    opacity: 0;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.pb-number-box,
+.progress-title {
+    color: #828282;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .overmij__studie{
+    font-size: 8px;
+  }
+
+
+
+  .column {
+    float: center;
+    width: 100%;
+    text-align: center!important;
+    margin-top: 100px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  .progress {
+    margin-left: 80px;
+ }
+
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 250px;
+}
+
+
+
+footer .column{
+  height: 200px;
+  width: 50%;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  outline: none;
+  padding: 10px;
+  transition: 0.7s;
+}
+
+footer a:hover{
+  font-size: 18px;
+  transition: 0.7s
+}
+
+.wie{
+  margin: 0;
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 610px){
+
+  .column {
+    float: center;
+    width: 100%;
+    text-align: center!important;
+    margin-top: 100px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  .progress {
+    margin-left: 200px;
+ }
+
+ h2{
+   margin-top: 100px!important;
+ }
+
+  p{
+    font-size: 20px;
+  }
+
+  button{
+    top: 60%;
+  }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    border-bottom: 1px solid white;
+    text-align: left;
+  }
+
+  h2{
+    margin-top: 100px!important;
+  }
+
+  footer .column{
+    width: 100%;
+  }
+
+  footer #column{
+    margin-top: 50px;
+  }
+
+}
